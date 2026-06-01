@@ -17,8 +17,8 @@ const problems = [
   },
   {
     icon: Car,
-    title: 'Can't Finance a Car',
-    description: 'Auto lenders won't approve you without credit history, leaving you stuck with cash-only options.',
+    title: "Can't Finance a Car",
+    description: "Auto lenders won't approve you without credit history, leaving you stuck with cash-only options.",
     impact: 'Paying cash for a depreciating asset or using expensive ride-shares',
   },
   {
@@ -64,7 +64,7 @@ export default function Problem() {
           
           <p className="text-white/60 text-lg max-w-2xl mx-auto">
             The US credit system is designed for people who already have credit.
-            As a newcomer, you're stuck in a frustrating catch-22.
+            As a newcomer, you are stuck in a frustrating catch-22.
           </p>
         </motion.div>
 
