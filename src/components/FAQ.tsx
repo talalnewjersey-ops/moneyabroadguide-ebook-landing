@@ -5,44 +5,44 @@ import { Plus, Minus, HelpCircle } from 'lucide-react';
 
 const faqs = [
   {
-    q: 'Do I need a Social Security Number (SSN) to follow this guide?',
-    a: 'No! The guide specifically covers how to start building credit without an SSN using an ITIN (Individual Taxpayer Identification Number). There are multiple strategies for newcomers without SSNs, including specific cards that accept ITINs.',
+    q: "Do I need a Social Security Number (SSN) to follow this guide?",
+    a: "No! The guide specifically covers how to start building credit without an SSN using an ITIN (Individual Taxpayer Identification Number). There are multiple strategies for newcomers without SSNs, including specific cards that accept ITINs.",
   },
   {
-    q: 'Does this guide work for F-1 student visa holders?',
-    a: 'Absolutely. There is an entire chapter dedicated to F-1 and other student visa strategies. You can start building credit during your studies, and the guide shows you exactly which products are available to students and how to qualify for them.',
+    q: "Does this guide work for F-1 student visa holders?",
+    a: "Absolutely. There is an entire chapter dedicated to F-1 and other student visa strategies. You can start building credit during your studies, and the guide shows you exactly which products are available to students and how to qualify for them.",
   },
   {
-    q: 'How long before I see my first credit score?',
-    a: 'Typically 1-6 months after opening your first account. The guide includes strategies to speed up this process, including tools like Experian Boost that can help you get a score even faster.',
+    q: "How long before I see my first credit score?",
+    a: "Typically 1-6 months after opening your first account. The guide includes strategies to speed up this process, including tools like Experian Boost that can help you get a score even faster.",
   },
   {
-    q: 'I just arrived in the US last month. Is this guide right for me?',
-    a: 'Yes! The guide is specifically designed for newcomers at all stages, including people who just arrived. The earlier you start, the better. Chapter 1 covers exactly what to do in your first 30 days.',
+    q: "I just arrived in the US last month. Is this guide right for me?",
+    a: "Yes! The guide is specifically designed for newcomers at all stages, including people who just arrived. The earlier you start, the better. Chapter 1 covers exactly what to do in your first 30 days.",
   },
   {
-    q: 'What if I'm a green card holder, not a visa holder?',
-    a: 'Green card holders have more credit building options available to them. The guide covers strategies for permanent residents and how to maximize your position as a green card holder.',
+    q: "What if I am a green card holder, not a visa holder?",
+    a: "Green card holders have more credit building options available to them. The guide covers strategies for permanent residents and how to maximize your position as a green card holder.",
   },
   {
-    q: 'Is the guide updated for 2026?',
-    a: 'Yes! This is the 2026 edition with the latest credit building tools, updated bank policies, and new products that accept newcomers. Credit card offers and bank policies change frequently — this guide reflects the current landscape.',
+    q: "Is the guide updated for 2026?",
+    a: "Yes! This is the 2026 edition with the latest credit building tools, updated bank policies, and new products that accept newcomers. Credit card offers and bank policies change frequently — this guide reflects the current landscape.",
   },
   {
-    q: 'What if I already have a credit score but want to improve it?',
-    a: 'The guide covers everything from starting at zero to reaching 800+. If you already have a score, Chapters 3, 4, and 6 are especially relevant for optimization strategies to push past your current score.',
+    q: "What if I already have a credit score but want to improve it?",
+    a: "The guide covers everything from starting at zero to reaching 800+. If you already have a score, Chapters 3, 4, and 6 are especially relevant for optimization strategies to push past your current score.",
   },
   {
-    q: 'Is there a money-back guarantee?',
-    a: 'Yes! You have 30 full days to try the guide. If you're not satisfied for any reason, email us for a complete refund — no questions asked. We're confident in the value this guide provides.',
+    q: "Is there a money-back guarantee?",
+    a: "Yes! You have 30 full days to try the guide. If you are not satisfied for any reason, email us for a complete refund — no questions asked. We are confident in the value this guide provides.",
   },
   {
-    q: 'How is this different from free information on the internet?',
-    a: 'Free information is generic and written for US citizens who already have credit history. This guide is specifically written for immigrants, expats, and international students — covering products that accept newcomers, immigration-specific considerations, and strategies that actually work when you're starting from zero in a new country.',
+    q: "How is this different from free information on the internet?",
+    a: "Free information is generic and written for US citizens who already have credit history. This guide is specifically written for immigrants, expats, and international students — covering products that accept newcomers, immigration-specific considerations, and strategies that actually work when starting from zero in a new country.",
   },
   {
-    q: 'What format is the guide delivered in?',
-    a: 'The guide is delivered as a PDF that you can read on any device — phone, tablet, or computer. You also get access to all bonus spreadsheets as downloadable files. After purchase, you'll receive an email with download links immediately.',
+    q: "What format is the guide delivered in?",
+    a: "The guide is delivered as a PDF that you can read on any device — phone, tablet, or computer. You also get access to all bonus spreadsheets as downloadable files. After purchase, you will receive an email with download links immediately.",
   },
 ];
 
@@ -115,7 +115,7 @@ export default function FAQ() {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div className="px-6 pb-5 pl-15">
+                    <div className="px-6 pb-5">
                       <p className="text-white/60 text-base leading-relaxed pl-9">{faq.a}</p>
                     </div>
                   </motion.div>
