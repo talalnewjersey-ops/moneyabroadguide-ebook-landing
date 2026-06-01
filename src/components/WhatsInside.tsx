@@ -7,7 +7,7 @@ const chapters = [
     number: '01',
     title: 'The US Credit System Decoded',
     description: 'Understand how FICO scores work, the 5 factors that determine your score, and what lenders actually care about.',
-    topics: ['FICO vs VantageScore explained', 'The 5 credit score factors', 'How credit bureaus work', 'What "thin file" means for you'],
+    topics: ['FICO vs VantageScore explained', 'The 5 credit score factors', 'How credit bureaus work', 'What thin file means for you'],
   },
   {
     number: '02',
@@ -36,7 +36,7 @@ const chapters = [
   {
     number: '06',
     title: 'From Good to Excellent (750+)',
-    description: 'Once you have credit, here's the exact roadmap to reaching an excellent score and keeping it there.',
+    description: 'Once you have credit, this is the exact roadmap to reaching an excellent score and keeping it there.',
     topics: ['The 750+ credit portfolio', 'Premium card qualification', 'Credit limit increase tactics', 'Long-term credit health'],
   },
 ];
@@ -59,7 +59,7 @@ export default function WhatsInside() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
             style={{ background: 'rgba(16,185,129,0.1)', border: '1px solid rgba(16,185,129,0.3)' }}>
             <BookOpen className="w-4 h-4 text-emerald-400" />
-            <span className="text-emerald-400 text-sm font-medium">What's Inside</span>
+            <span className="text-emerald-400 text-sm font-medium">{"What's Inside"}</span>
           </div>
           
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-6 tracking-tight">
