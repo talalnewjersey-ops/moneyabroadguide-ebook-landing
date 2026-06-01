@@ -5,6 +5,15 @@ import { ArrowRight, Star, Shield, Zap, Globe } from 'lucide-react';
 export default function FinalCTA() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
+  const audienceTags = ['Immigrants', 'Expats', 'Intl Students', 'Visa Holders', 'Green Card'];
+  
+  const features = [
+    { icon: Zap, text: 'Instant Download' },
+    { icon: Globe, text: 'Works for All Visas' },
+    { icon: Star, text: '4.9/5 Rating' },
+    { icon: Shield, text: '30-Day Guarantee' },
+  ];
+
   return (
     <section id="cta" ref={ref} className="relative py-24 lg:py-32 overflow-hidden">
       {/* Background */}
@@ -16,8 +25,10 @@ export default function FinalCTA() {
           backgroundSize: '60px 60px',
         }}
       />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] rounded-full opacity-[0.08]"
-        style={{ background: 'radial-gradient(ellipse, #10b981, transparent)' }} />
+      <div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] rounded-full opacity-[0.08]"
+        style={{ background: 'radial-gradient(ellipse, #10b981, transparent)' }}
+      />
 
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
@@ -27,7 +38,7 @@ export default function FinalCTA() {
         >
           {/* Audience tags */}
           <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
-            {['Immigrants', 'Expats', 'Int'l Students', 'Visa Holders', 'Green Card'].map((tag) => (
+            {audienceTags.map((tag) => (
               <span
                 key={tag}
                 className="px-4 py-2 rounded-full text-sm font-medium"
@@ -50,18 +61,13 @@ export default function FinalCTA() {
           </h2>
 
           <p className="text-xl text-white/60 max-w-2xl mx-auto mb-12 leading-relaxed">
-            Every day without a credit score is a day you're paying more, qualifying for less,
+            Every day without a credit score is a day you are paying more, qualifying for less,
             and falling behind. The best time to start was when you arrived. The second best time is now.
           </p>
 
           {/* Feature icons */}
           <div className="flex flex-wrap items-center justify-center gap-8 mb-12">
-            {[
-              { icon: Zap, text: 'Instant Download' },
-              { icon: Globe, text: 'Works for All Visas' },
-              { icon: Star, text: '4.9/5 Rating' },
-              { icon: Shield, text: '30-Day Guarantee' },
-            ].map((item) => (
+            {features.map((item) => (
               <div key={item.text} className="flex items-center gap-2 text-white/50 text-sm">
                 <item.icon className="w-5 h-5 text-emerald-400" />
                 {item.text}
